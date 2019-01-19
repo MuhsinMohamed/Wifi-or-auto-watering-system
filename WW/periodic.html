@@ -1,0 +1,379 @@
+<!doctype html>
+<html background = #404040>
+<style>
+
+		body {
+			margin: 0;
+			/* margin-top: 50px; */
+		}
+
+		html {
+		background: #f3f3f3;
+				}
+
+				@font-face {
+					font-family: Futura, sans-serif;
+					src: url(Futura.ttf);
+				}
+
+		.top {
+			background: #404040;
+			color: #ffffff;
+			font-size: 500%;
+			border: 0;
+			font-family: Futura, sans-serif;
+			padding: 300px;
+
+		}
+
+		.top center[quote] {
+			font-size: 50%;
+			font-style: italic;
+		}
+
+		.top center[startbutton] a {
+			background-color: #ffffff;
+			font-size: 45%;
+			overflow: hidden;
+			padding: 5px;
+		}
+
+		.top center[startbutton] a:link {
+			text-decoration: none;
+			color: #404040;
+		}
+
+		.top center[startbutton] a:visited {
+			text-decoration: none;
+			color: #404040;
+		}
+		.top center[startbutton] a:hover {
+			background-color: #800000;
+			color: #ffffff;
+		}
+
+
+
+		article [quote]{
+			background: #ffe599;
+			font-family: Pacifico;
+			font-size: 950%;
+			text-align: center;
+			padding: 0px;
+			margin-top: 50px;
+
+		}
+
+		footer{
+			background: #404040;
+			color: #ffffff ;
+			padding: 0px;
+			font-size: ;
+		}
+
+		.nav {
+			background: #a2c4c9;
+			font-family: "Courier New", Courier, Monospace;
+			font-size: 18px;
+			text-align: center;
+			position: fixed;
+			top: 0;
+			color: #ffffff;
+			width: 100%;
+			float: none;
+			height: 56px;
+
+		}
+
+		.nav a {
+			padding: 12px 55px;
+			padding-top: 15px;
+			margin-top: 10px;
+
+		}
+
+		.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #a2c4c9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+		color: #a2c4c9;
+	}
+
+	.dropdown-content a {
+	float: none;
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+		color: #a2c4c9;
+	}
+
+	.dropdown-content a:hover {
+	background-color: #ddd;
+	}
+
+		.dropdown:hover .dropdown-content {
+	display: block;
+		color: a2c4c9;
+		}
+		.dropdown {
+	float: none;
+	overflow: hidden;
+		padding: 17px 55px;
+			}
+
+		.nav a:hover {
+			background-color: #ffffff;
+			color: #a2c4c9;
+		}
+
+		.nav a {
+			padding: 17px 55px;
+		}
+
+		.nav a:link {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.nav a:visited {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.nav a:hover {
+			color: #a2c4c9
+		}
+
+		.nav a:active {
+		background-color: #7d8ab1;
+		color: #ffffff;
+		}
+
+
+
+
+
+
+
+
+
+
+		.navi a:hover {
+			background-color: #ffffff;
+			color: #404040;
+		}
+		.navi {
+			background: #404040;
+			font-family: "Courier New", Courier, Monospace;
+			font-size: 15px;
+			padding: 0px;
+			text-align: center;
+
+		}
+
+		.navi a{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+
+		.navi tr[copyright]{
+			height: 100px;
+		}
+
+		.navi tr {
+			height: 75px;
+		}
+
+		.navi a:link {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.navi a:visited {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.navi a:hover {
+			background-color: #ffffff;
+			color: #404040;
+			text-decoration: none;
+		}
+
+
+		.pagetop {
+			margin-top: 50px;
+			background-color: #404040;
+			color: #ffffff;
+			font-family: Futura, sans-serif;
+			font-size: 500%;
+			font-style: italic;
+			text-align: center;
+		}
+
+		.pagetop a{
+			color: #ffffff;
+			text-decoration: none;
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+
+		.Diseases h1 {
+			text-align: left;
+		}
+
+
+
+		.infoscreen img{
+			width: 1280px;
+			height: 800px;
+			border: 2px solid black;
+		}
+
+		.infoscreen a:hover {
+			background-color: #551A8B;
+			color: #ffffff;
+		}
+
+
+
+		table {
+			width: 100%;
+		}
+
+
+
+
+		h1 {
+			text-align: center;
+			font-family: Futura, sans-serif;
+
+		}
+
+		.VaccineChart th{
+			border: 2px solid black;
+			background-color: #acdda7;
+		}
+
+		.VaccineChart td{
+			border: 2px solid black;
+			background-color: #acdda7;
+			text-align: center;
+		}
+
+		.VaccineChart tbody {
+			border-collapse: collapse;
+		}
+		.VaccineChart center {
+			text-align: center;
+		}
+
+		.VaccineChart [vacc] {
+			text-align: left;
+		}
+
+		.VaccineChart [ChartTop] {
+			text-align="center"
+			height: 50px;
+		}
+
+		.VaccineChart [blankcell] {
+			background-color: #d9d9d9;
+		}
+
+		#GettingStarted {
+				padding-top: 55px;
+		}
+
+		#MoreInfo {
+			text-align: left;
+			font-size: 125%;
+			padding-top: 55px;
+		}
+
+		.content {
+			font-family: verdana, sans-serif;
+		}
+
+		h2, h3, h4 {
+			font-family: Futura, sans-serif;
+		}
+
+</style>
+<head background=#404040>
+
+
+	<title>Wifi Watering</title>
+	<link rel="icon" type="image/png" href="wwlogo.png" sizes="32x32">
+
+	<!-- CSS STYLE STARTS HERE -->
+	<link rel="stylesheet" type="text/css" href="WW.css">
+	<!--CSS STYLE END-->
+
+
+	<HEADER class = "top" id="home">
+
+		<center>Control your irrigation: </center>
+		<center quote><i>Control your irrigation.</i></center>
+		<center style="font-size: 50%;">&nbsp;</center>
+		<form action"" method="get">
+			Enter data in TextBox: <br>
+    <input type="text" name="inputbox" value="">
+    <input type="button" name="button" value="click" onclick="showData(this.form)">
+
+
+		</form>
+		<center startbutton><a href="#GettingStarted">Periodically (based on a set time period)</a></center>
+
+	</HEADER>
+
+	<!--TOP NAVIGATION-->
+
+<table class="nav">
+<div class="topnav">
+<tr class="topnavtable">
+
+
+  <td><a href="Wifi Watering.html">Home</a></td>
+
+  <td><a href="VaccMyths.html">Why the project is important</a></td>
+  <td><a href="VaccDebate.html">About the project</a></td>
+
+
+
+
+
+  </tr>
+
+</div>
+</table>
+
+
+<!--FOOTER NAVIGATION-->
+
+	<footer>
+	<table class="navi">
+	<tr>
+		<u>
+			<td><a href="Wifi Watering.html">Home</a></td>
+			<td><a href="VaccMyths.html">Why the project is improtant</a></td>
+			<td><a href="VaccDebate.html">About the project</a></td>
+
+
+		</u>
+		</tr>
+
+		<tr style="height: 100px;">
+			<td colspan="10">Done in 24 hours for OakCodefest 2019 <br />Unofficial &copy; #include&lt;name.h&gt; 2019</td>
+		</tr>
+		</table>
+	</footer>
+
+</head>
