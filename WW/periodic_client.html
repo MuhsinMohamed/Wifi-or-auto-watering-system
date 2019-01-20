@@ -1,10 +1,12 @@
-client.println("<!doctype html>")
-client.println("<html background = #404040><head background=#404040>")
-client.println("<title>Wifi Watering</title><link rel="icon" type="image/png" href="wwlogo.png" sizes="32x32"><HEADER class = "top" id="home"><center>Control your irrigation: </center>")
-client.println("<center quote><i>Control your irrigation.</i></center><center style="font-size: 50%;">&nbsp;</center><form action"" method="get">Enter data in TextBox: <br><input type="text" name="inputbox" value="">")
-client.println("<input type="button" name="button" value="click" onclick="showData(this.form)"></form><center startbutton><a href="#GettingStarted">Periodically (based on a set time period)</a></center></HEADER>")
-client.println("<table class="nav"><div class="topnav"><tr class="topnavtable"><td><a href="Wifi Watering.html">Home</a></td>")
-client.println("<td><a href="VaccMyths.html">Why the project is important</a></td><td><a href="VaccDebate.html">About the project</a></td></tr></div></table>")
+client.println("<!doctype html>");
+client.println("<html background = #404040><head background=#404040><title>Wifi Watering</title>");
+client.println("<link rel="icon" type="image/png" href="wwlogo.png" sizes="32x32">");
+client.println("<HEADER class = "top" id="home"><center>Irrigate your plants/crops periodically </center>");
+client.println("<center quote><i>Enter the number of hours between each irrigation session.</i></center><center style="font-size: 50%;">&nbsp;</center>");
+client.println("<form action="" method="get">Enter data in TextBox: <br><input type="number" name="hours"><input type="submit" value="submit"></form>");
+client.println("<center startbutton><a href="#GettingStarted">Periodically (based on a set time period)</a></center></HEADER>");
+client.println("<table class="nav"><div class="topnav"><tr class="topnavtable"><td><a href="Wifi Watering.html">Home</a></td>");
+client.println("<td><a href="VaccMyths.html">Why the project is important</a></td><td><a href="VaccDebate.html">About the project</a></td></tr></div></table>");
 client.println("<footer><table class="navi"><tr>");
 client.println("<u><td><a href="Wifi Watering.html">Home</a></td><td><a href="VaccMyths.html">Why the project is improtant</a></td><td><a href="VaccDebate.html">About the project</a></td></u>");
 client.println("</tr><tr style="height: 100px;"><td colspan="10">Done in 24 hours for OakCodefest 2019 <br />Unofficial &copy; #include&lt;name.h&gt; 2019</td>");
