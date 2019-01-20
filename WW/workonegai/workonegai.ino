@@ -198,4 +198,3 @@ client.println("</tr></table></footer></head>");
     Serial.println("");
   }
 }
-
