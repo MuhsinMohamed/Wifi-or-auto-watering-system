@@ -17,6 +17,7 @@ const char* password = "OakCodefest@2019";
 
 // Set web server port number to 80
 WiFiServer server(80);
+int hours;
 
 // Variable to store the HTTP request
 String header;
@@ -216,6 +217,14 @@ client.println("<footer><table class=""navi""><tr>");
 client.println("<u><td><a href=""Wifi Watering.html"">Home</a></td><td><a href=""VaccMyths.html"">Why the project is improtant</a></td><td><a href=""VaccDebate.html"">About the project</a></td></u>");
 client.println("</tr><tr style=""height: 100px;""><td colspan=""10"">Done in 24 hours for OakCodefest 2019 <br />Unofficial &copy; #include&lt;name.h&gt; 2019</td>");
 client.println("</tr></table></footer></head>");
+client.println("<!doctype html>");
+client.println("<html background = #404040><head background=#404040>");
+client.println("<title>Wifi Watering</title><link rel=""icon"" type=""image/png"" href=""wwlogo.png"" sizes=""32x32""><HEADER class = ""top"" id=""home""><center>Control your irrigation: </center>");
+client.println("<center quote><i>Control your irrigation.</i></center><center style=""font-size: 50%;"">&nbsp;</center><form action"" method=""get"">Enter data in TextBox: <br><input type=""text"" name=""inputbox"" value="">");
+client.println("<input type=""button"" name=""button"" value=""click"" onclick=""showData(this.form)""></form><center startbutton><a href=""#GettingStarted"">Periodically (based on a set time period)</a></center></HEADER>");
+client.println("<table class=""nav""><div class=""topnav""><tr class=""topnavtable""><td><a href=""Wifi Watering.html"">Home</a></td>");
+client.println("<td><a href=""VaccMyths.html"">Why the project is important</a></td><td><a href=""VaccDebate.html"">About the project</a></td></tr></div></table>");
+
 
 
 
@@ -241,8 +250,38 @@ if (header.indexOf("GET /off.html") >= 0)
 {
 digitalWrite(output13, HIGH);  
 }
+          
+if (header.indexOf("GET /VaccMyths.html") >= 0)
+{
+client.println("<!doctype html>");
+client.println("<html background = #404040><head background=#404040><title>Wifi Watering</title>");
+client.println("<link rel=""icon"" type=""image/png"" href=""wwlogo.png"" sizes=""32x32"">");
+client.println("<HEADER class = ""top"" id=""home""><center>About our product</center>");
+client.println("<center quote><i><h1>Problem Statement</h1><br />Most farmers today are part of informal economy. As a matter of fact, agriculture is the sector with the highest level of informal employment (93.6%) around the world. Since, jobs in the informal economy offer low wages, farmers need to ensure that their product is of the highest quality so that it gives them maximum wage. Two questions that farmers usually have trouble answering while growing crops are “when do I water?” and “how long do I water for?” Unless farmers know the answers to these questions, they face the risk of damaging their crops by over-watering or they do not water the plants enough and face less crop yield. Both of which do not ensure maximum wage. A very important term used in farming is evapotranspiration. ET is calculated using the solar radiation, relative humidity and recent rainfall. The readings are then used to calculate the soil moisture lost from the soil and then the farmer determines how much water to give to the plant. </i></center><center style=""font-size: 50%;"">&nbsp;</center>");
+client.println("</HEADER>");
+client.println("<table class=""nav""><div class=""topnav""><tr class=""topnavtable""><td><a href=""Wifi Watering.html"">Home</a></td>");
+client.println("<td><a href=""VaccMyths.html"">Why the project is important</a></td><td><a href=""VaccDebate.html"">About the project</a></td></tr></div></table>");
+client.println("<footer><table class=""navi""><tr>");
+client.println("<u><td><a href=""Wifi Watering.html"">Home</a></td><td><a href=""VaccMyths.html"">Why the project is improtant</a></td><td><a href=""VaccDebate.html"">About the project</a></td></u>");
+client.println("</tr><tr style=""height: 100px;""><td colspan=""10"">Done in 24 hours for OakCodefest 2019 <br />Unofficial &copy; #include&lt;name.h&gt; 2019</td>");
+client.println("</tr></table></footer></head>");  
+}
 
-
+if (header.indexOf("GET /VaccDebate.html") >= 0)
+{
+client.println("<!doctype html>");
+client.println("<html background = #404040><head background=#404040><title>Wifi Watering</title>");
+client.println("<link rel=""icon"" type=""image/png"" href=""wwlogo.png"" sizes=""32x32"">");
+client.println("<HEADER class = ""top"" id=""home""><center>About our product</center>");
+client.println("<center quote><i><strong>Problem Statement</strong><br />How long do I water the plants? This is usually calculated through ET, however, our project utilises a moisture sensor helps the user determine how much moisture the soil has lost. Furthermore, while ET takes more effort and time, our project produces the same results with just the click of the button. The moisture sensor controls the water flow. It starts watering the plants when there is a loss of moisture in the soil, and stops once it has detected that the plant has been watered enough. This ensured that the plant does not receive any excess water or experience a shortage of water. When do I water the plants? For tackling this problem, our app uses an irrigation scheduling feature.  The user can input in different intervals of time after which the plants have to be watered. After these intervals, the water will automatically start and the plants will be watered.</i></center><center style=""font-size: 50%;"">&nbsp;</center>");
+client.println("</HEADER>");
+client.println("<table class=""nav""><div class=""topnav""><tr class=""topnavtable""><td><a href=""Wifi Watering.html"">Home</a></td>");
+client.println("<td><a href=""VaccMyths.html"">Why the project is important</a></td><td><a href=""VaccDebate.html"">About the project</a></td></tr></div></table>");
+client.println("<footer><table class=""navi""><tr>");
+client.println("<u><td><a href=""Wifi Watering.html"">Home</a></td><td><a href=""VaccMyths.html"">Why the project is improtant</a></td><td><a href=""VaccDebate.html"">About the project</a></td></u>");
+client.println("</tr><tr style=""height: 100px;""><td colspan=""10"">Done in 24 hours for OakCodefest 2019 <br />Unofficial &copy; #include&lt;name.h&gt; 2019</td>");
+client.println("</tr></table></footer></head>");  
+}
 
 
 
